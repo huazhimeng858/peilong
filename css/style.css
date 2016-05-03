@@ -1,0 +1,109 @@
+/* ȫ��CSS���� */
+body { font-family:"Microsoft Yahei"; margin:0 auto; padding:0; font-size:12px; color:#333;  }
+div, form, ul, ol, li, span, p, dl, dt, dd { margin:0; padding:0; border:0; }
+img, a img { border:0; margin:0; padding:0; }
+h1, h2, h3, h4, h5, h6 { margin:0; padding:0; font-size:12px; }
+ul, ol, li { list-style:none }
+table, td, input { font-size:12px; padding:0; font-family:inherit; }
+.bignews { color:#cc0000; }
+.blank8 { height:8px; overflow:hidden; clear:both; }
+.noneBox { display:none; }
+img{ vertical-align: top;}
+
+
+/* Ĭ��������ɫ */
+a { outline-style:none; color:#333; text-decoration:none }
+a:hover { color:#c00; text-decoration:underline; }
+
+/* common */
+.clearfix:after{ clear:both; content:"\200B"; display:block; height:0;}
+.clearfix{ *zoom:1;}
+.clear{ clear:both; font-size:0; height:0; line-height:0; overflow:hidden;}
+
+
+/*����*/
+.menu{height:26px;_overflow:hidden;z-index:9999;}
+.menu a{color:#fff;text-decoration:none;position:relative;}
+.menu li{height:35px;font-size:14px;float:left;position:relative;color:#357d13;text-shadow: 0 0px 1px #fff; text-align:center;padding:0 12px;}
+.menu em{font-style:normal; font-family:Verdana, Geneva, sans-serif;color:#fff;position: absolute;top:2px!important;top:5px;right:0px!important;right:-5px;}
+/*.menu li:hover{width:70px;height:26px;background: url(../images/navbj.gif) no-repeat 0 -112px;border:0px;}*/
+.menu li:hover{height:35px;background:#b20000 url(../images/navjt.gif) no-repeat center bottom;border:0px;padding:0px 0px;border-radius:3px;border-bottom:0px}
+.menu li:hover.nojt{background:#b20000}
+.menu li:hover a{color:#fff; display:block;}
+.menu li.no_sub:hover{background: url(../images/navbj.gif) no-repeat 0 -112px;border:0px;}
+.menu ul{background-color:#fff;border:1px solid #b2b2b2;border-top:none;position:absolute;left:-1px;top:-999em;z-index:9999;padding:0px;display:none;-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#b2b2b2')";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#b2b2b2');
+    -moz-box-shadow: 1px 1px 2px #b2b2b2;
+    -webkit-box-shadow: 1px 1px 2px #b2b2b2;
+    box-shadow:1px 1px 2px #b2b2b2;}
+.menu .jticon {width:25px;height:9px;position:absolute;left:10%;top:-9px;background:url(../images/navjt.gif) no-repeat; display:block}
+.menu li:hover ul{width:130px;top:35px;display:block;}
+.menu li:hover ul li{width:120px;font-size:12px;border:none;height:26px;line-height:26px;text-align:left;padding:0 0px;background:none;padding-left:10px;}
+.menu li:hover ul li.nobj{background: none}
+.menu li:hover ul li a{text-decoration:none;padding:0;border-bottom:0px;width:120px;display:block;color:#888;font-family:"����"}
+.menu li:hover ul li a:hover{text-decoration:none;color:#c00;}
+/*.menu li:hover ul li:hover{background:#cccccc}*/
+/*IE6*/
+.menu li.hover{height:35px;background:#b20000 url(../images/navjt.gif) no-repeat center bottom;border:0px;padding:0 12px;border-radius: 3px;}
+.menu li.hover a{color:#fff;text-decoration: none; display:block}
+.menu li.hover ul{width:130px;top:35px;display:block;padding:0 5px 0px 5px;}
+.menu li.hover ul li{width:120px;font-size:12px;border:none;height:30px;line-height:30px; text-align:left;background:none;padding:0 0px;padding-left:10px;}
+.menu li:hover ul .jticon {width:25px;height:9px;position:absolute;left:10%;top:-9px;background:url(../images/navjt.gif) no-repeat; display:block}
+.menu li:hover ul li.nobj{ background-images:none}
+.menu li.hover ul li a{width:120px;display:block;font-size:12px;color:#888;text-decoration:none;padding:0; font-family:"����"}
+.menu li.hover ul li a:hover{text-decoration: none;color:#c00; }
+/*.menu li:hover ul li:hover{background:#cccccc}*/
+
+
+
+/*�󱳾�*/
+.bigbanner{height:464px; position:relative; margin:0px auto; z-index:88;min-width:1200px;}
+.bigbanner a{ padding:0px;}
+.banner_pre_next{position:relative;z-index:335;top:200px;margin:0 auto;_width:100%}
+.banner_pre_next a{ width:27px; height:44px; background:url(../images/newgif.gif?v=12) no-repeat 0 -1068px; text-indent:-999em;}
+.banner_pre_next .banner_btn_left{position:absolute;left:10%; background-position:0px -1068px;}
+.banner_pre_next .banner_btn_left:hover{background-position:-44px -1068px;}
+.banner_pre_next .banner_btn_right{position:absolute;right:10%; background-position:0px -1124px;}
+.banner_pre_next .banner_btn_right:hover{background-position:-44px -1124px;}
+.banner_show{ width:100%; text-align:center; height:464px; position:relative;z-index:1;overflow:hidden; }
+.bannger_inbox{ position:absolute; left:49%;top:0;z-index:1; }
+.banner_mag{width:760px;position:absolute;z-index:333;left:50%;top:100px;margin-left:-380px;text-align:left}
+.banner_magnr{width:720px;height:200px;padding:40px 0 0 40px;color:#fff; text-align:left;background:url(../images/searchbj.png) no-repeat!important;background:url(../images/newgif.gif) no-repeat;margin:0 auto}
+.banner_show .bt{height:26px;line-height:26px;position:absolute; right:390px;bottom:30px;z-index:2;color:#fff;filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#99000000', endColorstr='#99000000'); background-color:rgba(0,0,0,0.6); border-radius:3px; display:block;font-size:12px; font-weight: normal; text-align:left;padding:0 15px;cursor:pointer;}
+.bannger_inbox span:hover{text-decoration: underline;color:#fff;}
+/*.banner_magnr{width:720px;height:200px;padding:40px 0 0 40px;color:#fff; text-align:left;background:url(../images/searchbj.png) no-repeat;_background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/searchbja.png",sizingMethod='crop',enabled=true);}
+/*.banner_magnr {width:710px;height:180px;padding:20px 0 0 40px;border-radius:6px;color:#fff; text-align:left;filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#B2000000', endColorstr='#B2000000');background-color:rgba(0,0,0,0.7);zoom:1;
+-moz-box-shadow: 3px 5px 5px #000;
+-webkit-box-shadow: 3px 5px 5px #000;
+box-shadow:3px 5px 5px #000;}
+:root .banner_magnr {filter:none;background-color:rgba(0,0,0,0.7);-moz-box-shadow: 3px 5px 5px #000;
+-webkit-box-shadow: 3px 5px 5px #000;
+box-shadow:3px 5px 5px #000;}*/
+.news01{width:720px;height:54px;}
+.news01 .s1{float:left;width:190px;height:54px;background:url(../images/slogo.png) no-repeat;_background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/slogo.png",sizingMethod='crop',enabled=true);  text-indent:-999em;}
+.news01 .s1 a{width:184px;height:54px; display:block}
+.news01 .s2{float:left;height:24px;padding-top:22px;font-size:14px;color:#fff;}
+.news01 .s2 a{color:#fff;}
+.news02{width:720px;height:36px;margin-top:10px;z-index:888; position:relative;}
+
+/**
+.news02 .s1{float:left;width:560px;height:36px;line-height:36px;font-size:15px;position: relative;}
+.news02 .s1 a{float:left;padding:0 15px;font-size:15px;color:#fff; text-decoration:none}
+**/
+.news02 .s1{float:left;height:36px;line-height:36px;font-size:15px;position: relative;}
+.news02 .s1 a{float:left;padding:0 12px;font-size:15px;color:#fff; text-decoration:none}
+
+.news02 .s1 a:hover{ background:#c00;color:#fff;border-radius:3px;}
+.news02 .s1 a.cur{background:#c00;border-radius:3px;}
+.news02 .s1 .zhot{ background:url(../images/zuhot1.png) no-repeat;_background:url(../images/zuhot1.gif) no-repeat;width:48px;height:14px; position:absolute;top:-2px;left:278px;}
+
+.news02 .s1 a.zuh{ background:url(../images/zuh.png) no-repeat 63px 3px;background-size:8px 11px;}/*0331*/
+.news02 .s1 a.zuh:hover{ background:#c00 url(../images/zuh.png) no-repeat 63px 3px;background-size:8px 11px;}/*0331*/
+
+
+.news03{width:720px;height:42px;margin-top:10px;z-index:777;}
+.news03 .searchjt{width:16px;height:7px; background:url(../images/navsjt.gif) no-repeat; position: absolute; top:-6px;left:27px;}
+.sinputstyle{float:left;width:610px;height:42px;line-height:42px;color:#888;overflow:hidden;border:0;font-size:14px; text-indent:10px;overflow:hidden;background:url(../images/newgif.gif?v=12) no-repeat 0 -440px;outline:none; font-family:"Microsoft Yahei"}
+.sbuttonstyle{float:left;cursor:pointer;border:0;width:60px;height:42px;line-height:42px;background:url(../images/newgif.gif?v=12) no-repeat 0 -285px;outline:none}
+
+

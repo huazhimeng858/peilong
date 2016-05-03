@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jq/jquery-2.1.4.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/main.shell.js"></script>
+    <style>
+        *{margin:0;padding:0;}
+        body{margin:0 auto;font : 14px '微软雅黑', Verdana, Helvetica, Arial, sans-serif;width:100%;background-color: #e4e4e4;}
+        a{color:#000;text-underline: none; }
+        a:hover{color: crimson;cursor: pointer;}
+        a:active{color: coral;}
+        .clearfix{zoom:1;}
+        .clearfix:after{display: block;clear:both;content: "";}
+        #header{width:100%;height:30px;background-color: #fff;margin-bottom: 10px;background: url(images/bg-color.jpg) repeat;}
+        .nav-header{width:960px;height:30px;margin:0 auto;}
+        #hearder ul{width:200px;height:30px;display:inline-block;}
+        .header-list{width:60px;height:30px;line-height: 30px;float:left;}
+        #login{width:70px;height:30px;line-height: 30px;float:right;display: inline-block;}
+        .main{width:100%;background-color: #e4e4e4;}
+        .main-item{width:960px;height:640px;background-color: #fff;margin:0 auto;position:relative;border-radius: 10px;}
+        .main-item-content{width:960px;height:auto;margin:0 auto;margin-top: 20px;}
+        .main-item-left{width:695px;height:1000px;float: left;background-color: #fff;position: relative;background:url(images/bg-color.jpg) repeat;}
+        .left-film-time{width:300px;height:20px;position:absolute;left:45px;top:5px;}
+        .left-item-info{width:680px;height:35px;left:5px;top:45px;position:absolute;}
+		.item-info-list{width:680px;height:35px;font-size:16px;color:#e4e4e4;font-weight: bold;}
+        .item-info-li{display:inline-block;text-align: center;float: left;}
+        .item-info-list li:nth-child(1){width:195px;height:35px;text-align: center;}
+        .item-info-list li:nth-child(2){width:135px;height:35px;}
+        .item-info-list li:nth-child(3){width:80px;height:35px;}
+        .item-info-list li:nth-child(4){width:80px;height:35px;}
+        .item-info-list li:nth-child(5){width:80px;height:35px;}
+        .item-info-list li:nth-child(6){width:110px;height:35px;}
+        .item-info-li1{width:685px;height:90px;}
+        .item-li1-list li{display:inline-block;border:1px solid #000;float: left;overflow: hidden;background-color: #e4e4e4;}
+        .item-li1-list li:nth-child(1){width:190px;height:90px;line-height: 90px;background-color: #e4e4e4;}
+        .item-li1-list li:nth-child(2){width:140px;height:90px;overflow: hidden;background-color: #e4e4e4;}
+        .item-li1-list li:nth-child(3){width:80px;height:90px;line-height: 90px;background-color: #e4e4e4;}
+        .item-li1-list li:nth-child(4){width:80px;height:90px;line-height: 90px;background-color: #e4e4e4;}
+        .item-li1-list li:nth-child(5){width:80px;height:90px;line-height: 90px;background-color: #e4e4e4;}
+        .item-li1-list li:nth-child(6){width:103px;height:90px;border-top-right-radius: 10px;}
+
+        .item-li1-list li:nth-child(1) div{width:180px;height:70px;line-height: 70px;background-color: #fff;text-align: center;border-radius: 5px;margin: 17px 0 3px 10px;display: inline-block;}
+        .item-li1-list li:nth-child(2) div{width:135px;height:70px;overflow: hidden;background-color: #fff;text-align: center;border-radius: 5px;display: inline-block;margin:17px 0 3px 5px;padding:15px 0 0 0;}
+        .item-li1-list li:nth-child(3) div{width:75px;height:70px;line-height: 70px;border-radius: 5px;margin: 17px 0 3px 5px;text-align: center;display: inline-block;background-color: #fff;}
+        .item-li1-list li:nth-child(4) div{width:75px;height:70px;line-height: 70px;border-radius: 5px;margin: 17px 0 3px 5px;text-align: center;display: inline-block;background-color: #fff;}
+        .item-li1-list li:nth-child(5) div{width:75px;height:70px;line-height: 70px;border-radius: 5px;margin: 17px 0 3px 5px;text-align: center;display: inline-block;background-color: #fff;}
+
+
+
+        .poll-number{width:110px;height:90px;position:relative;}
+        .reduce{width:25px;height:25px;float:left;margin-left:10px;margin-top: 30px;background: url(images/re-add.gif) no-repeat 0 -25px;}
+        .poll-number-text{width:25px;height:25px;float:left;margin-left: 25px;border:0;text-align: center;}
+        .add{width:25px;height:25px;background-color: blue;float:left;margin-left: 50px;margin-top: -25px;background: url(images/re-add.gif) no-repeat 0 0;}
+        .li1-scroll{width:685px;height:90px;background-color: #000;display: none;background: url(images/poll-bg-color.jpg) repeat;}
+
+        .item-info-list-li2{width:685px;height:90px;}
+        .item-info-li2-list li{display:inline-block;text-align: center;border:1px solid #000;float: left;overflow: hidden;background-color: #e4e4e4;}
+        .item-info-li2-list li:nth-child(1){width:190px;height:90px;line-height: 90px;}
+        .item-info-li2-list li:nth-child(2){width:140px;height:60px;overflow: hidden;padding-top: 30px;padding-bottom: -30px;}
+        .item-info-li2-list li:nth-child(3){width:80px;height:90px;line-height: 90px;}
+        .item-info-li2-list li:nth-child(4){width:80px;height:90px;line-height: 90px;}
+        .item-info-li2-list li:nth-child(5){width:80px;height:90px;line-height: 90px;}
+        .item-info-li2-list li:nth-child(6){width:103px;height:90px;}
+
+        .li2-scroll{width:685px;height:90px;background-color: #000;display: none;}
+
+
+
+        .main-item-right{width:245px;height:auto;float: right;background-color: #fff;}
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="nav-header">
+            <ul>
+                <li class="header-list"><a href="#">活动时</a></li>
+                <li class="header-list"><a href="#">魔时网</a></li>
+                <li class="header-list"><a href="#">活动易</a></li>
+            </ul>
+            <div id="login"><a href="#">登录/注册</a></div>
+        </div>
+    </div>
+    <div class="main clearfix">
+        <div class="main-item">
+
+        </div>
+        <div class="main-item-content clearfix">
+            <div class="main-item-left clearfix">
+                <div class="left-film-time">
+                    <label for="time"></label>
+                    <input type="text" id="time" value="5月20日 19:30">
+                </div>
+                <div class="left-item-info">
+                    <ul class="item-info-list">
+                        <li class="item-info-li">票种</li>
+                        <li class="item-info-li">售票时间</li>
+                        <li class="item-info-li">原价</li>
+                        <li class="item-info-li">售价</li>
+                        <li class="item-info-li">剩余票种</li>
+                        <li class="item-info-li">订购数量</li>
+                    </ul>
+                    <div class="item-info-li1">
+                        <ul class="item-li1-list">
+                            <li><div>5月20日 100元学生票</div></li>
+                            <li><div class="info-li1-list"><span>截止日期</span><br><span>2016-05019 19:30</span></div></li>
+                            <li><div>100</div></li>
+                            <li><div>100</div></li>
+                            <li><div class="li1-remaining">5</div></li>
+                            <li class="li1-content">
+                                <div class="poll-number">
+                                    <span class="reduce"></span>
+                                    <input type="text" class="poll-number-text" value="0">
+                                    <span class="add"></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="li1-scroll"></div>
+                    <div class="item-info-list-li2">
+                        <ul class="item-info-li2-list">
+                            <li>5月20日 100元学生票</li>
+                            <li><div>截止日期</div><div>2016-05019 19:30</div></li>
+                            <li>100</li>
+                            <li>100</li>
+                            <li class="li2-remaining">5</li>
+                            <li class="li2-content">
+                                <!--<div class="poll-number">-->
+                                <!--<span class="reduce"></span>-->
+                                <!--<input type="text" class="poll-number-text" value="0">-->
+                                <!--<span class="add"></span>-->
+                                <!--</div>-->
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="li2-scroll"></div>
+                </div>
+            </div>
+            <div class="main-item-right clearfix">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+
+    </div>
+<script>
+    $(function(){
+        pel.initModule($(".li1-content"));
+    });
+</script>
+</body>
+</html>

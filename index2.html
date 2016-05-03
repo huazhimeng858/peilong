@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jq/jquery-2.1.4.min.js"></script>
+    <script src='js/jq/index1.js'></script>
+    <script src='js/jq/index2.js'></script>
+</head>
+<body>
+<div class="banner_mag">
+    <div class="banner_magnr">
+        <div class="news01" id="dsy_D02_01">
+            <div class="s1"><a href="http://www1.fang.com/" target="_self">搜房网</a></div>
+            <div class="s2">全国【<a href="http://www.fang.com/SoufunFamily.htm" target="_blank">切换城市</a>】</div>
+        </div>
+        <div class="news02">
+            <div class="s1"><a href="http://fangjia1.fang.com/" id="dsy_D02_19" onmouseover="change(&#39;chafangjia&#39;);" class="cur" target="_self">查房价</a><a href="http://newhouse.fang.com/house/s/" id="dsy_D02_02" onclick="setTimeout(function(){document.getElementById(&#39;projnames&#39;).value=&#39;&#39;},300); " onmouseover="change(&#39;maixinfang&#39;);" target="_self" class="">买新房</a><a href="http://esf.fang.com/" id="dsy_D02_03" onmouseover="change(&#39;maiershoufang&#39;);" target="_self" class="">买二手房</a><a href="http://zu.fang.com/" id="dsy_D02_04" onmouseover="change(&#39;zhaozufang&#39;);" target="_self" class="">找租房</a><a href="http://home1.fang.com/" id="dsy_D02_05" onmouseover="change(&#39;zhuangxiujiaju&#39;)" target="_self" class="">装修家居</a><a href="http://news.fang.com/" id="dsy_D02_06" onmouseover="change(&#39;fangchankuaixun&#39;);" target="_self" class="">房产快讯</a><a href="http://world.fang.com/" id="dsy_D02_20" onmouseover="change(&#39;haiwaifangchan&#39;);" target="_self" class="">海外房产</a></div>
+            <ul class="menu">
+                <li style="width:35px;background:url(http://js.soufunimg.com/homepage/new/fang905bj/new/images/navicon1.gif) no-repeat 48px 8px;position: absolute;top:8px;left:600px;text-shadow: 0 0px 0px #fff;">
+                    <a>更多</a>
+                    <ul style="padding-bottom:0px;top:26px;"><li style="height:25px;line-height:25px;"><a href="http://newhouse.fang.com/house/s/list/" target="_self" id="dsy_D02_21">地图找房</a></li>
+                        <li style="height:25px;line-height:25px;"><a href="http://www.fang.com/ask/?city=bj" target="_self" id="dsy_D02_12">房产问答</a></li>
+                        <li style="height:25px;line-height:25px;"><a href="http://zhishi.fang.com/" target="_self" id="dsy_D02_22">房产知识</a></li>
+                        <li style="background:none;height:25px;line-height:25px;"><a href="http://www.youtx.com/" target="_self" id="dsy_D02_07">短租</a></li>
+                        <li style="height:25px;line-height:25px;"><a href="http://office.fang.com/" target="_self" id="dsy_D02_08">写字楼</a></li>
+                        <li style="height:25px;line-height:25px;"><a href="http://shop.fang.com/" target="_self" id="dsy_D02_09">商铺</a></li>
+                        <!-- <li style="height:25px;line-height:25px;"><a  href="http://world.fang.com/house/" target="_self"  id="dsy_D02_10">海外房产</a></li>-->
+                        <li style="height:25px;line-height:25px;"><a href="http://bbs.fang.com/" target="_self" id="dsy_D02_11">业主论坛</a></li>
+                        <!-- <li style="height:25px;line-height:25px;"><a href="http://www.fang.com/ask/?city=bj " target="_self"  id="dsy_D02_12">问答</a></li> -->
+                        <li style="height:25px;line-height:25px;"><a href="http://search.fang.com/so/" target="_self" id="dsy_D02_13">综合搜索</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="news03" id="dsy_D02_14" style="position:relative">
+            <div class="searchjt" id="searchjtId1" style="display: block;"></div><div class="searchjt" id="searchjtId2" style="margin-left: 70px; display: none;"></div><div class="searchjt" id="searchjtId3" style="margin-left: 145px; display: none;"></div><div class="searchjt" id="searchjtId4" style="margin-left: 221px; display: none;"></div><div class="searchjt" id="searchjtId5" style="margin-left: 300px; display: none;"></div><div class="searchjt" id="searchjtId6" style="margin-left: 382px; display: none;"></div><div class="searchjt" id="searchjtId7" style="margin-left: 465px; display: none;"></div>
+
+
+
+
+
+            <input name="" type="text" class="sinputstyle" flag="chafangjia" onmousedown="javascript:getId();" onmouseout="this.className=&#39;sinputstyle&#39;;" onmousemove="this.className=&#39;sinputstyle&#39;;" onblur="SFUI.toggleHint(this);this.className=&#39;sinputstyle&#39;;this.onmouseout=function(){this.className=&#39;sinputstyle&#39;};" onfocus="focusEvent(event,this);" value="请输入小区名称或地址，给自己的房子估个价" maxlength="40" id="projnames">
+            <a href="" target="_blank" id="pinggu"></a><span onclick="getName()" class="sbuttonstyle"></span></div>
+    </div>
+</div>
+</body>
+</html>
